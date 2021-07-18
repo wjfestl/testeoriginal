@@ -1,6 +1,8 @@
 package com.original.gestaografo.domain;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,7 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Graph implements Serializable{
+public class Graph implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
@@ -17,7 +19,7 @@ public class Graph implements Serializable{
 	private String source;
 	private String target;
 	private Integer distance;
-
+	
 	public Graph() {
 	}
 
@@ -60,5 +62,6 @@ public class Graph implements Serializable{
 	public void setDistance(Integer distance) {
 		this.distance = distance;
 	}
+
 
 }

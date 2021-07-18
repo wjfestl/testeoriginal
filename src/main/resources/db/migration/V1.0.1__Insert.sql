@@ -1,0 +1,1 @@
+INSERT INTO GRAPH VALUES (1, 'A', 'B', 6);
