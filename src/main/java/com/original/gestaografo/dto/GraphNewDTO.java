@@ -1,33 +1,14 @@
-package com.original.gestaografo.domain;
+package com.original.gestaografo.dto;
 
 import java.io.Serializable;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
-@Entity
-public class Graph implements Serializable {
+public class GraphNewDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
-
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Integer id;
+	
 	private String source;
 	private String target;
 	private Integer distance;
-
-	public Graph() {
-	}
-
-	public Graph(Integer id, String source, String target, Integer distance) {
-		super();
-		this.source = source;
-		this.target = target;
-		this.distance = distance;
-	}
-
+	
 	public String getSource() {
 		return source;
 	}
@@ -49,6 +30,17 @@ public class Graph implements Serializable {
 	}
 
 	public void setDistance(Integer distance) {
+		this.distance = distance;
+	}
+
+	public GraphNewDTO() {
+		super();
+	}
+
+	public GraphNewDTO(String source, String target, Integer distance) {
+		super();
+		this.source = source;
+		this.target = target;
 		this.distance = distance;
 	}
 
