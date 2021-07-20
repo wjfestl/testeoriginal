@@ -16,15 +16,4 @@ public class GestaografoApplication {
 		SpringApplication.run(GestaografoApplication.class, args);
 	}
 
-	
-//	@Override
-//	public void run(String... args) throws Exception {
-//
-//		Graph gr1 = new Graph(null, "J", "F", 11);
-//		Graph gr2 = new Graph(null, "G", "H", 8);
-//
-//		graphRepository.saveAll(Arrays.asList(gr1, gr2));
-//
-//	}	
-
 }
